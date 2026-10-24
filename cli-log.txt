@@ -1,0 +1,70 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261024112446
+Username: DESKTOP-CU3N0VB\User
+RunAs User: DESKTOP-CU3N0VB\User
+Configuration Name: 
+Machine: DESKTOP-CU3N0VB (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 14516
+PSVersion: 5.1.19041.7802
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.7802
+BuildVersion: 10.0.19041.7802
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is .\cli-log.txt
+PS C:\Users\User\SEDO-09-2026-Regular-Exam-1> git checkout main
+git pull
+git checkout -b bugfix/home-load
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Already up to date.
+Switched to a new branch 'bugfix/home-load'
+PS C:\Users\User\SEDO-09-2026-Regular-Exam-1> git status
+git add .
+git commit -m "Fix homepage load error (#2)"
+git push -u origin bugfix/home-load
+On branch bugfix/home-load
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   script.js
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cli-log.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+[bugfix/home-load f3c5248] Fix homepage load error (#2)
+ 4 files changed, 11 insertions(+), 13 deletions(-)
+ create mode 100644 cli-log.txt
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 583 bytes | 583.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bugfix/home-load' on GitHub by visiting:
+remote:      https://github.com/BorislavAngeloff/SEDO-09-2026-Regular-Exam-1/pull/new/bugfix/home-load
+remote:
+To https://github.com/BorislavAngeloff/SEDO-09-2026-Regular-Exam-1.git
+ * [new branch]      bugfix/home-load -> bugfix/home-load
+branch 'bugfix/home-load' set up to track 'origin/bugfix/home-load'.
+PS C:\Users\User\SEDO-09-2026-Regular-Exam-1> git checkout main
+git pull
+git checkout -b refactor/user-service
+error: Your local changes to the following files would be overwritten by checkout:
+        cli-log.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+Already up to date.
+Switched to a new branch 'refactor/user-service'
